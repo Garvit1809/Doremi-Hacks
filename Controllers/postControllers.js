@@ -1,0 +1,7 @@
+exports.getAllPosts = () => {
+
+}
+
+exports.createPost = () => {
+    
+}
