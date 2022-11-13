@@ -1,11 +1,16 @@
-import samjhawa from '../assets/Samjhawa.mp3'
-import songCover from '../assets/trendingSIng.jpg'
+import song from '../assets/Samjhawa.mp3'
+import deathbed from '../assets/trendingImg/death-bed.png'
+import arcade from '../assets/trendingImg/arcade.jpg'
+import chooLo from '../assets/trendingImg/choo-lo.jpeg'
+import rangSharbaton from '../assets/trendingImg/Main_Rang_Sharbaton_Ka.jpg'
+import samjhawan from '../assets/trendingImg/samjhawan.jpg'
+import jagGhoomeya from '../assets/trendingImg/jag-ghoomeya.jpg'
 
 export const trendingData = [
     {
         name: 'Deathbed',
-        songCover: `${songCover}`,
-        audio: `${samjhawa}`,
+        songCover: `${deathbed}`,
+        audio: `${song}`,
         performerName: 'Powfu and Beabadoobee',
         popularity: '241',
         publishedOn: '02/11',
@@ -13,6 +18,7 @@ export const trendingData = [
     },
     {
         name: 'Arcade',
+        songCover: `${arcade}`,
         performerName: 'Duncan Laurence',
         popularity: '454',
         publishedOn: '07/03',
@@ -20,6 +26,7 @@ export const trendingData = [
     },
     {
         name: 'Choo Lo',
+        songCover: `${chooLo}`,
         performerName: 'The Local Train',
         popularity: '36',
         publishedOn: '05/21',
@@ -27,6 +34,7 @@ export const trendingData = [
     },
     {
         name: 'Main Rang Sharbaton Ka',
+        songCover: `${rangSharbaton}`,
         performerName: 'Garvit Varshney',
         popularity: '525',
         publishedOn: '09/11',
@@ -34,6 +42,7 @@ export const trendingData = [
     },
     {
         name: 'Samjhawan',
+        songCover: `${samjhawan}`,
         performerName: 'Garvit Varshney',
         popularity: '785',
         publishedOn: '07/01',
@@ -41,6 +50,7 @@ export const trendingData = [
     },
     {
         name: 'Jag Ghoomeya',
+        songCover: `${jagGhoomeya}`,
         performerName: 'Garvit Varshney',
         popularity: '456',
         publishedOn: '28/12',
