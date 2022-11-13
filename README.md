@@ -25,10 +25,9 @@ The goal of this website is to strengthen relationships between record companies
 ## ⚙️ How we built it
 
 - Design: Figma and other tools
-- Frontend: HTML, CSS and JS
-- Backend: Django
-- User Auth: Auth0
-- Three Js: Rendering 3D models
+- Frontend: React.js, styled-components, HTML, CSS and JS
+- Backend: Node.js and Express.js
+- Database: MongoDb and Mongoose
 
 ## 📅 Timeline
 
