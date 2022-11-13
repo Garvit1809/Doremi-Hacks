@@ -1,7 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import Logo from '../assets/Logo.jpg'
+// import Logo from '../assets/Logo.jpg'
+// import { SangeetArtLogo } from './SaneetArtistLogo'
+import Logo from '../assets/Sangeet_Artist_Logo.png'
 
 const Section = styled.div`
 padding: 86px 0px;
@@ -32,6 +34,11 @@ border-right: 2px solid white;
 display: flex;
 align-items: center;
 justify-content: space-between;
+
+img{
+  width: 200px;
+  /* mix-blend-mode: multiply; */
+}
 
 span{
   /* border: 1px solid white; */

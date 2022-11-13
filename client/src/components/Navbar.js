@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import userImg from "../assets/userImgg.jpg";
 // import { userImg } from "./SVG";
+import SangeetLogo from '../assets/Sangeet_Artist_Logo.png'
 
 const Section = styled.div`
   width: 100vw;
@@ -77,7 +78,7 @@ const MenuItem = styled.li`
 const Navbar = () => {
   return (
     <Section>
-      <Logo>Sangeet Artist</Logo>
+    <Logo>Sangeet Artist</Logo>
       <Menu>
         <MenuItem>
           <Link to="/">Home</Link>
