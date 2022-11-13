@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import song from '../assets/Samjhawa.mp3'
+import FileBase64 from 'react-file-base64';
 
 const Section = styled.div`
   width: 100vw;
@@ -56,6 +58,7 @@ const Section = styled.div`
       line-height: 31px;
       letter-spacing: 0.16px;
       box-sizing: border-box;
+      cursor: pointer;
     }
 
     input {
@@ -99,24 +102,48 @@ const Heading = styled.div`
 `;
 
 const PostWork = () => {
+  const [songName, setsongName] = useState();
+  const [songAudio, setsongAudio] = useState();
+  const [songCover, setsongCover] = useState();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(songName);
+    console.log(songAudio);
+    console.log(songCover);
+  };
+
   return (
     <Section>
       <Navbar />
       <Heading>Let's get your song published!</Heading>
-      <form>
+      <form onSubmit={handleSubmit}>
         <h1>Name of the song</h1>
         <input
           type="text"
-          name=""
           id="song-name"
           placeholder="Name for your Song"
+          value={songName}
+          onChange={(e) => setsongName(e.target.value)}
         />
         <h1>Upload your song</h1>
         <h5>Max file size is 10 Mb. Supported file types are .mp3 and .wav</h5>
-        <input type="file" name="" id="song" />
+        <input
+          type="file"
+          name=""
+          id="song"
+          accept="audio/*"
+          value={songAudio}
+          onChange={(e) => setsongAudio(e.target.value)}
+        />
         <h1>Upload your song cover</h1>
         <h5>Max file size is 5 Mb. Supported file types are .png and .jpg</h5>
-        <input type="file" name="" id="" />
+        <input
+          type="file"
+          name=""
+          id=""
+          value={songCover}
+          onChange={(e) => setsongCover(e.target.value)}
+        />
         <button type="submit">Publish my Song!!!</button>
       </form>
       <Footer />
