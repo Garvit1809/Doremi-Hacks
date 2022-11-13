@@ -32,6 +32,8 @@ The goal of this website is to strengthen relationships between record companies
 
 ## 📅 Timeline
 
+<img width="1440" alt="Timeline" src="https://user-images.githubusercontent.com/84132532/201513857-d2cbe332-fee7-4730-a159-a81d4cf1c5c4.png">
+
 ## 😵😵 Challenges we ran into
 
 - We decided to make a UI Design before actually coding frontend which increased our workload.
@@ -50,7 +52,7 @@ The goal of this website is to strengthen relationships between record companies
 - How to get audio from users and play it on the website.
 - 
 
-## 🚀 What's next for TheLostHistory
+## 🚀 What's next for Sangeet Artist
 
 - Features wise plan:
     - Add a feature that let's artists mint their cover art as NFTs and have an income through selling them.
