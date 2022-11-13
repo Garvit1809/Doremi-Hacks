@@ -418,14 +418,18 @@ const Home = () => {
           and make NFTs of their covers.
         </SubHeading>
         <Buttons>
-          <Publish>
-            <span>Publish Song</span>
-            <ArrowRight />
-          </Publish>
-          <Trending>
-            <span>See Trending</span>
-            <ArrowUpRight />
-          </Trending>
+        <Link to="/publish" >
+        <Publish>
+        <span>Publish Song</span>
+        <ArrowRight />
+        </Publish>
+        </Link>
+        <Link to='/trending' >
+        <Trending>
+        <span>See Trending</span>
+        <ArrowUpRight />
+        </Trending>
+        </Link>
         </Buttons>
         <WaveContainer>
           <Wave />
