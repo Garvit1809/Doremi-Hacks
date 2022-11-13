@@ -85,7 +85,7 @@ const Footer = () => {
             <AboutSection>
                 <img src={Logo} alt="" />
                 <span>
-                “Project name” is a project made to bring artists and musicians colser to producers and labels and ultimately increase the oppotunities available for them working as an individual or as a team.
+                “Sangeet Artist is a project made to bring artists and musicians colser to producers and labels and ultimately increase the oppotunities available for them working as an individual or as a team.
                 </span>
             </AboutSection>
             <List>

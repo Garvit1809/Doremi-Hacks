@@ -19,13 +19,14 @@ const Heading = styled.div`
   margin-top: 2.5rem;
   margin-bottom: 3.5rem;
   font-style: normal;
-  font-weight: 500;
   font-size: 54px;
   line-height: 114.5%;
   text-align: center;
   color: #000000;
+  font-family: 'Cabinet Grotesk', sans-serif;
+  font-weight:600;
   /* border: 1px solid red; */
-`;
+`
 
 const PopularCards = styled.div`
   display: grid;
