@@ -98,25 +98,6 @@ const Section = styled.div`
       }
     }
 
-<<<<<<< HEAD
-    input#song {
-      /* margin-bottom: 1rem; */
-      display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 16px 24px;
-gap: 10px;
-box-sizing: border-box;
-width: 197px;
-height: 53px;
-
-/* Self/Accent/Purple */
-
-background: #6161FE;
-border: 2px solid #000000;
-box-shadow: 3px 3px 0px #000000;
-border-radius: 4px;
-=======
     .input-container {
       font-family: "IBM Plex Sans", sans-serif;
       display: flex;
@@ -155,7 +136,6 @@ border-radius: 4px;
         font-size: 24px;
         height: 100%;
       }
->>>>>>> 5a9fb534c8baabcd56b6f30d84f1c5a7ccc1adfb
     }
   }
 `;
