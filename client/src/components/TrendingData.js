@@ -19,6 +19,7 @@ export const trendingData = [
     {
         name: 'Arcade',
         songCover: `${arcade}`,
+        audio: `${song}`,
         performerName: 'Duncan Laurence',
         popularity: '454',
         publishedOn: '07/03',
@@ -27,6 +28,7 @@ export const trendingData = [
     {
         name: 'Choo Lo',
         songCover: `${chooLo}`,
+        audio: `${song}`,
         performerName: 'The Local Train',
         popularity: '36',
         publishedOn: '05/21',
@@ -35,6 +37,7 @@ export const trendingData = [
     {
         name: 'Main Rang Sharbaton Ka',
         songCover: `${rangSharbaton}`,
+        audio: `${song}`,
         performerName: 'Garvit Varshney',
         popularity: '525',
         publishedOn: '09/11',
@@ -43,6 +46,7 @@ export const trendingData = [
     {
         name: 'Samjhawan',
         songCover: `${samjhawan}`,
+        audio: `${song}`,
         performerName: 'Garvit Varshney',
         popularity: '785',
         publishedOn: '07/01',
@@ -51,6 +55,7 @@ export const trendingData = [
     {
         name: 'Jag Ghoomeya',
         songCover: `${jagGhoomeya}`,
+        audio: `${song}`,
         performerName: 'Garvit Varshney',
         popularity: '456',
         publishedOn: '28/12',
