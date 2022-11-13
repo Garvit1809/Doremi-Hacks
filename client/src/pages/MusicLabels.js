@@ -105,7 +105,7 @@ const MusicLabels = () => {
           {MusicLabelsData.map((musicLabel, index) => {
             return (
               <Card>
-                <img src={TrendingSong} alt="" />
+                <img src={musicLabel.img} alt="" />
                 <h1>{musicLabel.name}</h1>
                 <div className="popularity" >
                   <h4>Featured {musicLabel.artists} Artists</h4>
