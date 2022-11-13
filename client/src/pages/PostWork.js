@@ -85,6 +85,21 @@ const Section = styled.div`
 
     input#song {
       /* margin-bottom: 1rem; */
+      display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 16px 24px;
+gap: 10px;
+box-sizing: border-box;
+width: 197px;
+height: 53px;
+
+/* Self/Accent/Purple */
+
+background: #6161FE;
+border: 2px solid #000000;
+box-shadow: 3px 3px 0px #000000;
+border-radius: 4px;
     }
   }
 `;

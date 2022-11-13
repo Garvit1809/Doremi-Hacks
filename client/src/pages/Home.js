@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import { ArrowRight, ArrowUpRight, Artist, Bubble, NFTs, Songs, Wave } from "../components/SVG";
+import { ArrowRight, ArrowUpRight, Artist, Bubble, KnowMoreBack, NFTs, Songs, Wave } from "../components/SVG";
 import HomeImg1 from '../assets/homeImg1.jpg'
 import HomeImg2 from '../assets/homeImg2.jpg'
 import HomeImg3 from '../assets/homeImg3.jpg'
@@ -199,11 +199,18 @@ const KnowMore = styled.div`
   width: 100vw;
   height: 75vh;
   background-color: white;
+  /* background-image: url(${KnowMoreBack}); */
 
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
 `;
+
+const SVGBack = styled.div`
+position: absolute;
+`
 
 const Box = styled.div`
   width: 584px;
@@ -485,6 +492,9 @@ const Home = () => {
               </div>
             </Welcome>
           </Box>
+          <SVGBack>
+            <KnowMoreBack/>
+          </SVGBack>
         </KnowMore>
         <WhatCanUDoHere>
           <h1>What can you do here</h1>

@@ -70,7 +70,7 @@ const MenuItem = styled.li`
 const Navbar = () => {
   return (
     <Section>
-      <Logo>Doremi</Logo>
+      <Logo>Sangeet Artist</Logo>
       <Menu>
         <MenuItem>
           <Link to="/">Home</Link>

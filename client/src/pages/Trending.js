@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import styled from "styled-components";
 import Navbar from "../components/Navbar";
 import { trendingData } from "../components/TrendingData";
 import TrendingSong from "../assets/trendingSIng.jpg";
 import Footer from "../components/Footer";
+import samjhawa from '../assets/Samjhawa.mp3'
+import { Pause, Play } from "../components/SVG";
 
 const Section = styled.div`
   width: 100vw;
@@ -49,12 +51,6 @@ const Card = styled.div`
   box-shadow: 3px 3px 0px #000000;
   border-radius: 8px;
 
-  img{
-    border-radius: 4px;
-    width: 328px;
-height: 328px;
-  }
-
   h1 {
     font-weight: 600;
     font-size: 32px;
@@ -94,7 +90,54 @@ div.duration{
 
 `;
 
+const ImageContainer = styled.div`
+width: calc(27vw - 48px);
+height: 328px;
+display: flex;
+flex-direction: column;
+position: relative;
+/* border: 1px solid red; */
+
+  img{
+    border-radius: 4px;
+    /* width: 328px; */
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+&:hover{
+  svg{
+    opacity: 1;
+  }
+}
+`
+
+const PlayPause = styled.div`
+cursor: pointer;
+/* border: 1px solid red; */
+svg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0;
+  transition: all 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+`
+
 const Trending = () => {
+  const ref = useRef(null);
+  const [click, setClick] = useState(false);
+    const handleClick = (index) => {
+        setClick(!click)
+
+        if (!click) {
+            ref.current.play();
+        } else {
+            ref.current.pause();
+        }
+    }
   return (
     <>
     <Section>
@@ -103,8 +146,16 @@ const Trending = () => {
         <PopularCards>
           {trendingData.map((trend, index) => {
             return (
-              <Card>
-                <img src={TrendingSong} alt="" />
+              <Card key={index} >
+                <ImageContainer>
+                <img src={trend.songCover} alt=""/>
+                <audio src={trend.audio} ref={ref} loop />
+                <PlayPause onClick={() => handleClick(index)}  >
+                {
+                  click ? <Pause/> : <Play/>
+                }
+                </PlayPause>
+                </ImageContainer>
                 <h1>{trend.name}</h1>
                 <div className="popularity" >
                   <h4>{trend.performerName}</h4>
