@@ -10,9 +10,9 @@ display: flex;
 flex-direction: row;
 justify-content: space-between;
 align-items: center;
-border: 1px solid red;
 padding: 24px 116px;
 box-sizing: border-box;
+/* border: 1px solid red; */
 `
 
 const Logo = styled.h1`
@@ -20,7 +20,7 @@ font-weight: 700;
 font-size: 28px;
 line-height: 35px;
 color: #161616;
-border: 1px solid red;
+/* border: 1px solid red; */
 `
 
 const Menu = styled.ul`
@@ -35,8 +35,8 @@ const MenuItem = styled.li`
 font-family: 'IBM Plex Sans';
 font-style: normal;
 font-weight: 400;
-font-size: 22px;
-line-height: 29px;
+font-size: 21px;
+/* line-height: 29px; */
 color: #161616;
 list-style: none;
 `
@@ -50,9 +50,7 @@ const Navbar = () => {
     <Menu>
         <MenuItem><Link to="/">Home</Link></MenuItem>
         <MenuItem><Link to="/trending">Trending</Link></MenuItem>
-        <MenuItem><Link to="/singers">Singers</Link></MenuItem>
-        <MenuItem><Link to="/musicians">Musicians</Link></MenuItem>
-        <MenuItem><Link to="/musiclabels">Music Labels</Link></MenuItem>
+        <MenuItem><Link to="/trending">NFT Gallery</Link></MenuItem>
     </Menu>
     </Section>
   )
