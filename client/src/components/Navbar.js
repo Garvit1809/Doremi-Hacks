@@ -44,10 +44,17 @@ const Menu = styled.ul`
     background: #6161fe;
     border: 1.5px solid #161616;
     box-shadow: 2px 2px 0px #000000;
+    translate: -2px -2px;
     border-radius: 56px;
     cursor: pointer;
     font-weight: 600;
     font-family: 'Cabinet Grotesk', sans-serif;
+    transition: all .15s ease-in;
+
+    &:hover {
+      translate: 0 0;
+      box-shadow:0 0 0;
+    }
 
     img {
       /* mix-blend-mode: multiply; */
@@ -70,7 +77,7 @@ const MenuItem = styled.li`
 const Navbar = () => {
   return (
     <Section>
-      <Logo>Doremi</Logo>
+      <Logo>Sangeet Artist</Logo>
       <Menu>
         <MenuItem>
           <Link to="/">Home</Link>
