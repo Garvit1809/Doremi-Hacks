@@ -39,17 +39,20 @@ const Menu = styled.ul`
     padding: 16px 24px;
     gap: 10px;
     box-sizing: border-box;
-    width: 217.6px;
+    /* width: 217.6px; */
     height: 59px;
     background: #6161fe;
     border: 1.5px solid #161616;
     box-shadow: 2px 2px 0px #000000;
     border-radius: 56px;
     cursor: pointer;
+    font-weight: 600;
+    font-family: 'Cabinet Grotesk', sans-serif;
 
     img {
       /* mix-blend-mode: multiply; */
       background-color: #6161fe;
+      border-radius: 50%;
     }
   }
 `;

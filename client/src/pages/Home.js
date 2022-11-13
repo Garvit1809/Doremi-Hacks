@@ -23,7 +23,7 @@ const Heading = styled.div`
     /* border: 1px solid red; */
     margin: 0 auto;
     margin-top: 3rem;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 64px;
     line-height: 130.5%;
     /* text-align: center; */
@@ -42,6 +42,7 @@ const Heading = styled.div`
     border-radius: 36px;
     transform: rotate(-10deg);
     position: relative;
+    top: 12px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 
@@ -92,6 +93,7 @@ const Buttons = styled.div`
   margin: 0 auto;
   /* border: 1px solid red; */
   margin-top: 3rem;
+  font-family: 'Cabinet Grotesk', sans-serif;
 
   display: flex;
   align-items: center;
@@ -111,6 +113,16 @@ const Publish = styled.div`
   box-shadow: 2px 2px 0px #000000;
   border-radius: 56px;
   cursor: pointer;
+  position: relative;
+  top: -2px;
+  left: -2px;
+  transition: all .15s ease-in;
+
+  &:hover {
+    box-shadow: 0 0 0;
+    top: 0;
+    left: 0;
+  }
 
   span {
     font-style: normal;
@@ -155,7 +167,7 @@ const Trending = styled.div`
 const WaveContainer = styled.div`
   /* border: 1px solid red; */
   /* height: 60px; */
-  margin-top: 3rem;
+  margin-top: 3.5rem;
   position: relative;
   overflow-x: hidden;
   /* background-color: white; */
@@ -357,7 +369,7 @@ padding: 24px;
 gap: 24px;
 box-sizing: border-box;
 width: 43vw;
-height: 500px;
+/* height: 500px; */
 background: #FFFFFF;
 border: 2px solid #000000;
 box-shadow: 4px 4px 0px #000000;
@@ -372,6 +384,7 @@ font-size: 42px;
 line-height: 60px;
 color: #000000;
 margin: 0;
+text-align:left;
 }
 
 p{
@@ -395,6 +408,14 @@ background: #6161FE;
 border: 1.5px solid #161616;
 box-shadow: 2px 2px 0px #000000;
 border-radius: 56px;
+color: #FFFFFF;
+/* font-weight: 500; */
+font-family: inherit;
+font-size: 18px;
+}
+
+img {
+  max-width: 100%;
 }
   }
 `;
@@ -491,19 +512,19 @@ const Home = () => {
             <img src={HomeImg1} alt="" />
             <h1>Meet Talented Singers</h1>
             <p>Look at profiles and past work of talented singers. Upvote their profile and contact them to get themto work in your team or your label.</p>
-            <button><Link to='/singers'>See all Singers -{">"}</Link></button>
+            <button><Link to='/singers'>See all Singers</Link></button>
           </div>
           <div>
             <img src={HomeImg2} alt="" />
             <h1>Meet Talented Musicians</h1>
             <p>Look at profiles and past work of talented musicians. Upvote their profile and contact them to get themto work in your team or your label.</p>
-            <button><Link to='/musicians'>See all Musicians -{">"}</Link></button>
+            <button><Link to='/musicians'>See all Musicians</Link></button>
           </div>
           <div>
             <img src={HomeImg3} alt="" />
             <h1>Labels and Producers</h1>
             <p>Look at postings and accounts of labels & producers who are constantly looking for new artists to play in their team or label.</p>
-            <button><Link to='/musiclabels'>See all Labels -{">"}</Link></button>
+            <button><Link to='/musiclabels'>See all Labels</Link></button>
           </div>
         </Meet>
       </Section>
