@@ -110,12 +110,12 @@ const Publish = styled.div`
   /* height: 59px; */
   background: #6161fe;
   border: 1.5px solid #161616;
-  box-shadow: 2px 2px 0px #000000;
+  box-shadow: 3px 3px 0px #000000;
   border-radius: 56px;
   cursor: pointer;
   position: relative;
-  top: -2px;
-  left: -2px;
+  top: -3px;
+  left: -3px;
   transition: all .15s ease-in;
 
   &:hover {
@@ -413,12 +413,19 @@ gap: 10px;
 /* height: 59px; */
 background: #6161FE;
 border: 1.5px solid #161616;
-box-shadow: 2px 2px 0px #000000;
+box-shadow: 3px 3px 0px #000000;
 border-radius: 56px;
 color: #FFFFFF;
 /* font-weight: 500; */
 font-family: inherit;
 font-size: 18px;
+translate: -3px -3px;
+transition: all .15s ease-in;
+
+&:hover {
+  box-shadow: 0 0 0;
+  translate: 0 0;
+}
 }
 
 img {
