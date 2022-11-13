@@ -1,4 +1,4 @@
-# Doremi-Hacks
+# Sangeet Artist
 A platform where singers and musicians can post their work. Producers and labels can check out the work and also contact the artist they think is talented.
 
 ## Introduction
@@ -65,5 +65,5 @@ The goal of this website is to strengthen relationships between record companies
 
 - [Garvit Varshney](https://github.com/Garvit1809)
 - [Adarsh Dubey](https://bio.link/inclinedadarsh)
-- [Susmita Dey](https://bio.link/susmitadey)
+- [Susmita Dey](https://susmita-dey.vercel.app/)
 - [Rakshit Gondwal](https://twitter.com/RakshitGondwal)
