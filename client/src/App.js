@@ -5,6 +5,8 @@ import Singers from './pages/Singers';
 import Musicians from './pages/Musicians';
 import MusicLabels from './pages/MusicLabels';
 import Trending from './pages/Trending';
+import Profile from './pages/Profile';
+import PostWork from './pages/PostWork';
 
 function App() {
   return (
@@ -15,6 +17,9 @@ function App() {
       <Route path='/singers' element={<Singers/>} />
       <Route path='/musicians' element={<Musicians/>} />
       <Route path='/musiclabels' element={<MusicLabels/>} />
+      <Route path='/musiclabels' element={<MusicLabels/>} />
+      <Route path='/profile' element={<Profile/>} />
+      <Route path='/publish' element={<PostWork/>} />
     </Routes>
     </div>
   );

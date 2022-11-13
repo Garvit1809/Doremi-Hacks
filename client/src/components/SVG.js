@@ -177,3 +177,4 @@ export const NFTs = () => {
 </svg>
   )
 }
+
